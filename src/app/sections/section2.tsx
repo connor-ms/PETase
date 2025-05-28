@@ -103,7 +103,7 @@ export default function Section2() {
             <div ref={textRef} className="px-4 mt-50 text-center mx-auto">
                 <h1 className="text-4xl font-bold">The Stats</h1>
                 <p className="text-lg my-4 max-w-2xl">
-                    Globally, approximately {TONS_PER_YEAR / 1000000} million tons of plastic are produced each year<a href="#references"><sup>[1]</sup></a>. It's estimated only 9% of that gets recycled<a href="#references"><sup>[2]</sup></a>.<br />
+                    Globally, approximately <b>{TONS_PER_YEAR / 1000000} million tons</b> of plastic are produced each year, with an estimated <b>20 million tons</b> of plastic litter ending up in the enviornment <a href="#references"><sup>[1]</sup></a>. It's estimated only 9% of that gets recycled<a href="#references"><sup>[2]</sup></a>.<br />
                     Since opening this page, <span className="w-100">{tonsProduced}</span> tons have been produced.
                 </p>
             </div>
@@ -162,11 +162,11 @@ export default function Section2() {
             </div>
 
             <div ref={textRef} className="px-4 mx-auto mt-25 mb-50 text-center">
-                <p className="text-lg my-4 max-w-2xl">
+                <p className="text-lg my-4 max-w-4xl">
                     The rate at which we are creating plastic is unsustainable, and it has impacts all around the globe.<br />
-                    - <b>Oceans</b>: 8 million tons of plastic enter the oceans annually TODO: source<br />
-                    - <b>Microplastics</b>: Can be airborne, and have been found at an increasing rate and volume in humans and other animals. TODO: source<br />
-                    - <b>Harm to wildlife</b>: It's estimated over 1 million animals die each year due to plastic polution in the ocean TODO: source<sup>[3]</sup>.<br />
+                    - <b>Oceans</b>: 11 million tons of plastic enter the oceans annually <sup>[4]</sup>.<br />
+                    - <b>Microplastics</b>: Can be airborne, and have been found at an increasing rate and volume in humans and other animals. These microplastics have been found to negatively affect our health in numerous ways <sup>[5]</sup>.<br />
+                    - <b>Harm to wildlife</b>: It's estimated over 1 million animals die each year due to plastic polution in the ocean<sup>[6]</sup>.<br />
                 </p>
             </div>
         </section>

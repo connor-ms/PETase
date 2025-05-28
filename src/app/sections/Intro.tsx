@@ -49,9 +49,6 @@ export default function IntroSection() {
                 <h3>
                     By Connor Sullivan
                 </h3>
-                {/* <p className="text-lg md:text-xl text-gray-300">
-                    Plastic waste is one of the most pressing environmental issues of our time.
-                </p> */}
             </div>
 
             <p ref={scrollRef} className="absolute bottom-4 left-1/2 transform -translate-x-1/2">Scroll down</p>

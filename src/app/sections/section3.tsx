@@ -119,7 +119,7 @@ export default function Section3() {
                     ref={paragraphRef}
                     className="text-lg mt-10 text-gray-300 leading-relaxed"
                 >
-                    PETase is an enzyme discovered in a bacterium called Ideonella sakaiensis that can break down PET (polyethylene terephthalate), which is a common plastic used in bottles and packaging. PETase works by degrading PET into its basic building blocks, which can then be reused to create new plastic products. This discovery offers a promising solution for reducing plastic waste and advancing sustainable recycling efforts.
+                    PETase is an enzyme discovered in a bacterium called Ideonella sakaiensis that can break down PET (polyethylene terephthalate), which is a common plastic used in bottles and packaging. PETase works by degrading PET into its basic building blocks, which can then be reused to create new plastic products <sup>[7]</sup>. This discovery offers a promising solution for reducing plastic waste and advancing sustainable recycling efforts.
                 </p>
 
                 <Image src="/PETase.jpg" height={500} width={500} alt="" className="mx-auto mt-15" />
@@ -151,6 +151,7 @@ export default function Section3() {
                             </div>
                         </div>
                     ))}
+                    <p>[8][9][10]</p>
                 </div>
             </div>
             <div className="max-w-2xl mx-auto px-6">

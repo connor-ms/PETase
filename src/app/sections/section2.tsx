@@ -160,6 +160,15 @@ export default function Section2() {
                     </div>
                 </div>
             </div>
+
+            <div ref={textRef} className="px-4 mx-auto mt-25 text-center">
+                <p className="text-lg my-4 max-w-2xl">
+                    The rate at which we are creating plastic is unsustainable, and it has impacts all around the globe.<br />
+                    - <b>Oceans</b>: 8 million tons of plastic enter the oceans annually TODO: source<br />
+                    - <b>Microplastics</b>: Can be airborne, and have been found at an increasing rate and volume in humans and other animals. TODO: source<br />
+                    - <b>Harm to wildlife</b>: It's estimated over 1 million animals die each year due to plastic polution in the ocean TODO: source<sup>[3]</sup>.<br />
+                </p>
+            </div>
         </section>
     )
 }

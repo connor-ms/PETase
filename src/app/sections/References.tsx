@@ -16,7 +16,7 @@ export default function References() {
         <div className="w-screen text-center py-25">
             <h1 className="text-5xl font-bold mb-15">References</h1>
             {references.map((reference, index) => {
-                return <>[{index + 1}] {reference}<br /></>
+                return <p key={index}>[{index + 1}] {reference}<br /></p>
             })}
         </div>
     )

@@ -97,8 +97,7 @@ export default function Section3() {
                         trigger: container2Ref.current,
                         start: "top 80%",
                         end: "top 40%",
-                        scrub: true,
-                        markers: true
+                        scrub: true
                     },
                 }
             );

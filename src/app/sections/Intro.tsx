@@ -24,8 +24,7 @@ export default function IntroSection() {
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: "top center",
-                    end: "bottom center",
-                    markers: true,
+                    end: "bottom center"
                 }
             }
         ).fromTo(scrollRef.current,

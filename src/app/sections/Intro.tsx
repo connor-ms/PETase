@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -10,7 +10,7 @@ export default function IntroSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        if (!sectionRef.current || !textRef.current) return;
+        if (!sectionRef.current || !textRef.current || !scrollRef) return;
 
         let tl = gsap.timeline();
 
@@ -38,16 +38,6 @@ export default function IntroSection() {
                 duration: 1
             }
         );
-
-        gsap.to(scrollRef.current, {
-            opacity: 0,
-            scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "center center",
-                end: "center center",
-                markers: true,
-            }
-        });
     });
 
     return (
@@ -56,9 +46,12 @@ export default function IntroSection() {
                 <h1 className="text-4xl md:text-6xl font-bold">
                     The Plastic Problem
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300">
+                <h3>
+                    By Connor Sullivan
+                </h3>
+                {/* <p className="text-lg md:text-xl text-gray-300">
                     Plastic waste is one of the most pressing environmental issues of our time.
-                </p>
+                </p> */}
             </div>
 
             <p ref={scrollRef} className="absolute bottom-4 left-1/2 transform -translate-x-1/2">Scroll down</p>

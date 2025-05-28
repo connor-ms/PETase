@@ -99,8 +99,8 @@ export default function Section2() {
     });
 
     return (
-        <section ref={sectionRef} className="bg-gradient-to-br from-blue-50 to-green-50 flex flex-col min-w-5xl max-w-screen text-black">
-            <div ref={textRef} className="px-4 ml-20 mt-50 text-left">
+        <section ref={sectionRef} className="bg-gradient-to-br from-blue-100 to-green-50 flex flex-col min-w-5xl max-w-screen text-black">
+            <div ref={textRef} className="px-4 mt-50 text-center mx-auto">
                 <h1 className="text-4xl font-bold">The Stats</h1>
                 <p className="text-lg my-4 max-w-2xl">
                     Globally, approximately {TONS_PER_YEAR / 1000000} million tons of plastic are produced each year<a href="#references"><sup>[1]</sup></a>. It's estimated only 9% of that gets recycled<a href="#references"><sup>[2]</sup></a>.<br />
@@ -161,7 +161,7 @@ export default function Section2() {
                 </div>
             </div>
 
-            <div ref={textRef} className="px-4 mx-auto mt-25 text-center">
+            <div ref={textRef} className="px-4 mx-auto mt-25 mb-50 text-center">
                 <p className="text-lg my-4 max-w-2xl">
                     The rate at which we are creating plastic is unsustainable, and it has impacts all around the globe.<br />
                     - <b>Oceans</b>: 8 million tons of plastic enter the oceans annually TODO: source<br />
